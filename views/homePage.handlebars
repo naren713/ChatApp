@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.3.1/socket.io.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+</head>
+<body>
+    <h1 class="ml-5">Welcome {{curUser.name}}!</h1>
+    <br>
+    <div class="ml-5 border border-dark bg-light" style="width: 95%; height:600px">
+
+
+<div id="message-container" class="m-2"></div>
+<div class="fixed-bottom m-5">
+        <div class="input-group mb-3">
+  <input type="text" id="messageInput" class="form-control" placeholder="Enter Message" aria-label="Recipient's username" aria-describedby="button-addon2">
+  <input id="userName" value="{{curUser.name}}"/>
+  <div class="input-group-append">
+    <button class="btn btn-outline-secondary" type="submit" id="button-addon2">Send</button>
+  </div>
+</div>
+    </div>
+    </div>
+    <script src="../script.js"></script>
+</body>
+</html>
